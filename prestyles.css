@@ -8,7 +8,7 @@ html, body {
 
 pre {
   overflow: auto;
-  max-height: 85%;
+  max-height: 93.1vh;
   width: 100%;
   border-radius: 1px; /* Prevents bad clipping in Chrome */
   font-size: 0.875rem; /* Smaller font size for code */
