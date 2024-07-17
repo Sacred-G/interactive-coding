@@ -1,0 +1,98 @@
+/* Base styles */
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-size: 16px; /* Base font size for better scaling */
+}
+
+pre {
+  overflow: auto;
+  max-height: 85%;
+  width: 100%;
+  border-radius: 1px; /* Prevents bad clipping in Chrome */
+  font-size: 0.875rem; /* Smaller font size for code */
+}
+
+#content {
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 40px; /* Increased bottom margin for header */
+}
+
+#header {
+  position: absolute;
+  bottom: 0;
+  height: auto; /* Allow header to expand */
+  min-height: 20px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:after {
+  content: '';
+  padding-right: 10px;
+  margin-left: 10px;
+  border-right: 1px solid;
+  border-color: inherit;
+}
+
+a:last-of-type:after {
+  border: none;
+  padding-right: 0;
+  margin-left: 0;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  html, body {
+    font-size: 14px; /* Slightly smaller base font size for medium screens */
+  }
+
+  pre {
+    font-size: 0.75rem; /* Even smaller font size for code on medium screens */
+  }
+
+  #content {
+    bottom: 60px; /* More space for header on medium screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html, body {
+    font-size: 12px; /* Smaller base font size for small screens */
+  }
+
+  pre {
+    font-size: 0.6875rem; /* Smallest font size for code on small screens */
+  }
+
+  #content {
+    bottom: 80px; /* Even more space for header on small screens */
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  a {
+    margin: 5px 0;
+  }
+
+  a:after {
+    display: none; /* Remove dividers on small screens */
+  }
+}
+  

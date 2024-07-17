@@ -1,0 +1,42 @@
+
+/**
+ * The text could use some tweaks. Let's use markdown and css to style it
+ */
+
+
+ .md {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  color:rgb(255, 255, 255)
+}
+
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+  display: inline-block;
+  color: #e53f3f;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.md li {
+  display:list-item;
+  margin: 1px 0;
+  color: rgb(255, 255, 255);
+}
+
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .md ul, .md p {
+  margin: 1px;
+  align-content: space-between;
+  
+  
+
+
+
+}
+/**
+ * That's better.
+ *
+ * This next part is a portfolio site. Where you can see some of my work
+ * and view my resume. The site is built with HTML, CSS, and JavaScript.
+ * Everything is custom coded besides a little jQuery. I included some 
+ * EasterEggs. See if you can find them on the main page by clicking around. 
+ */
+
