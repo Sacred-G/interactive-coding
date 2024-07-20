@@ -53,31 +53,34 @@ a:last-of-type:after {
   padding-right: 0;
   margin-left: 0;
 }
-
+pre:not(:empty){
+  max-height:47vh;
+}
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
-  html, body {
-    font-size: 14px; /* Slightly smaller base font size for medium screens */
-  }
 
   pre {
+    max-height: 90.1vh;
     font-size: 0.75rem; /* Even smaller font size for code on medium screens */
   }
-
+  pre:not(:empty){
+    max-height:47vh;
+  }
   #content {
     bottom: 60px; /* More space for header on medium screens */
   }
 }
 
-@media screen and (max-width: 480px) {
-  html, body {
-    font-size: 12px; /* Smaller base font size for small screens */
-  }
+@media screen and (max-width: 360px) {
 
   pre {
+    max-height: 93.1vh;
     font-size: 0.6875rem; /* Smallest font size for code on small screens */
+    padding-bottom: 3px;
   }
-
+  pre:not(:empty){
+    max-height:47vh;
+  }
   #content {
     bottom: 80px; /* Even more space for header on small screens */
   }

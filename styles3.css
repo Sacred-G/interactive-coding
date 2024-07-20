@@ -35,7 +35,7 @@ pre:hover {
 */
 
 *.value {
-  text-shadow: 0px 1px 1px rgb(196, 196, 196);
+  text-shadow: 0px 1px 7px rgb(196, 196, 196);
 } 
  
 pre:hover {

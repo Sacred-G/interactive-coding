@@ -1,8 +1,7 @@
 
 /**
- * The text could use some tweaks. Let's use markdown and css to style it
+ * The text could use some tweaks. Let's use css to style it
  */
-
 
  .md {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -10,30 +9,68 @@
 }
 
 .md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
-  display: inline-block;
+  display: inline;
   color: #e53f3f;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
+  gap:10px
+
 }
 
-.md li {
-  display:list-item;
-  margin: 1px 0;
-  color: rgb(255, 255, 255);
+ h1{
+  list-style:none;
+  font-size:3em;
+  letter-spacing:8px;
+  text-shadow:none;
+  animation: 10s infinite alternate;
+  animation: 10s infinite alternate;
+
 }
 
-.md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .md ul, .md p {
-  margin: 1px;
-  align-content: space-between;
+ h1{
+  animation: animation 5s ease-in-out 15 alternate;
+  -moz-animation: animation 5s ease-in-out 15 alternate;
+  animation: animation 6s ease-in-out 15 alternate;
+  -o-animation: animation 5s ease-in-out 15 alternate;
+  -webkit-animation: animation 6s ease-in-out 15 alternate;
+}
+
+.burn {
+  animation: animation 8s ease-in-out 10 alternate;
+  -moz-animation: animation 8s ease-in-out 10 alternate;
+  animation: animation 6s ease-in-out 10 alternate;
+  -o-animation: animation 6s ease-in-out 10 alternate;
+}
+@keyframes animation
+{
+0% {text-shadow: 3 0 10px #fefcc9,
+  10px -10px 20px #feec85,
+  -20px -20px 30px #ffae34,
+  20px -40px 40px #ec760c,
+  -20px -60px 50px #cd4606,
+  0 -80px 60px #973716,
+  10px -90px 70px #451b0e;}
+40% {text-shadow: 0 0 10px #fefcc9,
+  10px -10px 20px #fefcc9,
+  -20px -20px 30px #feec85,
+  22px -42px 40px #ffae34,
+  -22px -58px 40px #ec760c,
+  0 -82px 60px #cd4606,
+  10px -90px 60px  #973716;}
+}
+
   
-  
+li:hover{
+color:red;
+font-size:1vw}
 
-
-
+code:hover{
+font-size:1rem;
+color:red;
 }
 /**
  * That's better.
- *
+ * Scroll down to flip between the plain text and the rendered version.
  * This next part is a portfolio site. Where you can see some of my work
  * and view my projects and resume. The site is built using Astro.
  * Everything is custom coded besides a little jQuery. I included some 
