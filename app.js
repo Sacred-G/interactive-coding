@@ -3,7 +3,7 @@ import Promise from 'bluebird';
 import Markdown from 'markdown';
 const md = Markdown.markdown.toHTML;
 import workText from 'raw-loader!./work.txt';
-import pgpText from 'raw-loader!./pgp.txt';
+import iframeText from 'raw-loader!./iframe.txt';
 import headerHTML from 'raw-loader!./header.html';
 let styleText = [0, 1, 2, 3].map((i) => require('raw-loader!./styles' + i + '.css').default);
 import preStyles from 'raw-loader!./prestyles.css';
@@ -14,7 +14,7 @@ import getPrefix from './lib/getPrefix';
 // Vars that will help us get er done
 const isDev = window.location.hostname === 'localhost';
 const speed = isDev ? 1 : 16;
-let style, styleEl, workEl, pgpEl, skipAnimationEl, pauseEl;
+let style, styleEl, workEl, iframeEl, skipAnimationEl, pauseEl;
 let animationSkipped = false, done = false, paused = false;
 let browserPrefix;
 var iframe = document.createElement('iframe');
@@ -38,7 +38,7 @@ async function startAnimation() {
     createWorkBox();
     await Promise.delay(1000);
     await writeTo(styleEl, styleText[2], 0, speed, true, 1);
-    await writeTo(pgpEl, pgpText, 0, speed, true, 32);
+    await writeTo(iframeEl, iframeText, 0, speed, true, 32);
     await writeTo(styleEl, styleText[3], 0, speed, true, 1);
     
   }
@@ -56,12 +56,12 @@ async function startAnimation() {
 async function surprisinglyShortAttentionSpan() {
   if (done) return;
   done = true;
-  pgpEl.innerHTML = pgpText;
+  iframeEl.innerHTML = iframeText;
   let txt = styleText.join('\n');
 
   // The work-text animations are rough
   style.textContent = "#work-text * { " + browserPrefix + "transition: none; }";
-  style.textContent = "#pgp-text * { " + browserPrefix + "transition: none; }";
+  style.textContent = "#iframe-text * { " + browserPrefix + "transition: none; }";
   style.textContent += txt;
   let styleHTML = "";
   for(let i = 0; i < txt.length; i++) {
@@ -74,7 +74,7 @@ async function surprisinglyShortAttentionSpan() {
   let start = Date.now();
   while(Date.now() - 1000 > start) {
     workEl.scrollTop = Infinity;
-    styleEl.scrollTop = pgpEl.scrollTop = Infinity;
+    styleEl.scrollTop = iframeEl.scrollTop = Infinity;
     await Promise.delay(16);
   }
 }
@@ -148,7 +148,7 @@ function getEls() {
   style = document.getElementById('style-tag');
   styleEl = document.getElementById('style-text');
   workEl = document.getElementById('work-text');
-  pgpEl = document.getElementById('pgp-text');
+  iframeEl = document.getElementById('iframe-text');
   skipAnimationEl = document.getElementById('skip-animation');
   pauseEl = document.getElementById('pause-resume');
 }
@@ -225,7 +225,7 @@ function createEventHandlers() {
       workEl.scrollTop += (dy * (flipped ? -1 : 1));
     }, true);
   }
-  var container = document.getElementById('pgp-text'); 
+  var container = document.getElementById('iframe-text'); 
   container.appendChild(iframe);
   
  

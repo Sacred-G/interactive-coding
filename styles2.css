@@ -22,43 +22,31 @@
   font-size:3em;
   letter-spacing:8px;
   text-shadow:none;
-  animation: 10s infinite alternate;
-  animation: 10s infinite alternate;
-
-}
-
- h1{
-  animation: animation 5s ease-in-out 15 alternate;
-  -moz-animation: animation 5s ease-in-out 15 alternate;
-  animation: animation 6s ease-in-out 15 alternate;
-  -o-animation: animation 5s ease-in-out 15 alternate;
-  -webkit-animation: animation 6s ease-in-out 15 alternate;
+  animation: animation 20s ease-in-out 10 alternate;
+  animation: animation 20s ease-in-out 10 alternate;
+  -webkit-animation: animation 20s ease-in-out 10 alternate;
 }
 
 .burn {
-  animation: animation 8s ease-in-out 10 alternate;
-  -moz-animation: animation 8s ease-in-out 10 alternate;
-  animation: animation 6s ease-in-out 10 alternate;
-  -o-animation: animation 6s ease-in-out 10 alternate;
+  animation: animation 20s  ease-in-out 10 alternate;
+  animation: animatio  20s ease-in-out 10 alternate;
+  -webkit-animation: animatio  20s ease-in-out 10 alternate;
 }
-@keyframes animation
-{
-0% {text-shadow: 3 0 10px #fefcc9,
-  10px -10px 20px #feec85,
-  -20px -20px 30px #ffae34,
-  20px -40px 40px #ec760c,
-  -20px -60px 50px #cd4606,
-  0 -80px 60px #973716,
-  10px -90px 70px #451b0e;}
-40% {text-shadow: 0 0 10px #fefcc9,
-  10px -10px 20px #fefcc9,
-  -20px -20px 30px #feec85,
-  22px -42px 40px #ffae34,
-  -22px -58px 40px #ec760c,
-  0 -82px 60px #cd4606,
-  10px -90px 60px  #973716;}
+@keyframes animation{
+0%{
+  text-shadow: 
+    0 0 20px #fefcc9,
+    0 0 30px #fefcc9,
+    0 0 40px #feec85,
+    0 0 50px #ffae34,
+    0 0 60px #ec760c,
+    0 0 70px #cd4606,
+    0 0 80px #973716,
+    0 0 90px #451b0e;
+  color: #ff4500;
 }
 
+}
   
 li:hover{
 color:red;
@@ -73,7 +61,7 @@ color:red;
  * Scroll down to flip between the plain text and the rendered version.
  * This next part is a portfolio site. Where you can see some of my work
  * and view my projects and resume. The site is built using Astro.
- * Everything is custom coded besides a little jQuery. I included some 
- * EasterEggs. See if you can find them on the main page by clicking around. 
+ * Its added by embedding an iframe into a workbox.
+ * 
  */
 

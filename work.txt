@@ -1,10 +1,9 @@
-# Steven Bouldin#
-## HR Process/Solutions Engineer 
-##**Skills**
+# Steven Bouldin
+### HR Process/Solutions Engineer 
+### Full-Stack / NodeJS
+### **Skills** 
 ####**Web Development**
        HTML, CSS, JavaScript, React, Vue, And more
-####**Enterprise Resource Planning**
-       SAP, Oracle, Netsuite, Dyanamics 365
 ####**File Sharing and Transfer**
        FTP, SFIP, STSP, SSH, AS2, AS4
 ####**Web Services Protocols**
@@ -12,21 +11,23 @@
 ####**Cloud Platforms** 
        AWS, AZURE, and GCP
 ####**WorkFlow Automation** 
-       Power Automate, IFTT, and Zappier
+      Power Automate, IFTT, and Zappier
 ####**Productivity and Collaboration** 
-       Office 365, G-Suite, Trello, Asana, Slack
+      Office 365, G-Suite, Trello, Asana, Slack
 ####**Database Management** 
-       Postgresql, Mysql, MongoDB, and MariaDB
+      Postgresql, Mysql, MongoDB, and MariaDB
+####**Data Collection and Visualation** 
+      Prometheus and Grafana
 ####**Application Programmable Interface** 
-       Intergration, Data Access, Functionality Ext, Service Provision, and Automation
+      Intergration, Data Access, Functionality Ext, Service Provision, and Automation
 ####**Customer Relationalship Management** 
-       Salesforce, Dynamics 365, and Copper
+      Salesforce, Dynamics 365, and Copper
 ####**Ticketing Systems**
-       Jira, ServiceNow, RT, and Zoho
+      Jira, ServiceNow, RT, and Zoho
 ####**Network Virtualization and Server Management**
-       VMware NSX ESXi and WebMin and VirtualMin
+      VMware NSX ESXi and WebMin and VirtualMin
 # **Education**
- * Advanced High School Diploma, Crossville High School
+ * Advanced High School Diploma, Crossville High School 
  * Applied Computer Information Systems, Auburn University 
  * MicroMasters in Project Management, Rochester Institute of Technology 
 # **Certifications**
